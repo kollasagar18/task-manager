@@ -1,0 +1,57 @@
+]<!DOCTYPE html>
+<html>
+<head>
+    <title>User Signup</title>
+</head>
+<body>
+
+    <h1>User Signup</h1>
+
+    <form method="POST" action="/signup">
+
+        {% csrf_token %}
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter Name"
+        >
+
+        <br><br>
+
+        <input
+            type="text"
+            name="phone_num"
+            placeholder="Enter Phone Number"
+        >
+
+        <br><br>
+
+        <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+        >
+
+        <br><br>
+
+        <input
+            type="password"
+            name="re_password"
+            placeholder="Re Enter Password"
+        >
+
+        <br><br>
+
+        <button type="submit">
+            Signup
+        </button>
+
+    </form>
+
+    <h3>
+        {{ message }}
+    </h3>
+
+</body>
+</html>

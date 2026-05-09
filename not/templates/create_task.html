@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Task</title>
+</head>
+<body>
+
+    <h1>Create Task</h1>
+
+    <form method="POST" action="/create-task">
+
+        {% csrf_token %}
+
+        <input type="text"
+               name="name"
+               placeholder="Enter Name">
+
+        <br><br>
+
+        <input type="text"
+               name="phone_num"
+               placeholder="Enter Phone Number">
+
+        <br><br>
+
+        <input type="text"
+               name="title"
+               placeholder="Enter Title">
+
+        <br><br>
+
+        <textarea name="description"
+                  placeholder="Enter Description"></textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Create Task
+        </button>
+
+    </form>
+
+    <br>
+
+    <h3>
+        {{ message }}
+    </h3>
+
+</body>
+</html>

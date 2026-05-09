@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+</head>
+<body>
+
+    <h1>
+        Admin Login
+    </h1>
+
+    <form method="POST" action="/admin-login">
+
+        {% csrf_token %}
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter Admin Name"
+        >
+
+        <br><br>
+
+        <input
+            type="text"
+            name="pin"
+            placeholder="Enter Pin"
+        >
+
+        <br><br>
+
+        <input
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+        >
+
+        <br><br>
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+    <br>
+
+    <h3>
+        {{ message }}
+    </h3>
+
+    <br>
+
+    <a href="/admin-signup-page">
+
+        <button>
+            Signup
+        </button>
+
+    </a>
+
+</body>
+</html>

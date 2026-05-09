@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Delete Task</title>
+</head>
+<body>
+
+    <h1>Delete User Task</h1>
+
+    <form method="POST" action="/delete-task-admin">
+
+        {% csrf_token %}
+
+        <input type="text" name="user_id" placeholder="Enter User ID">
+
+        <br><br>
+
+        <button type="submit">
+            Delete Task
+        </button>
+
+    </form>
+    <h3>
+    {{ message }}
+</h3>
+
+</body>
+</html>

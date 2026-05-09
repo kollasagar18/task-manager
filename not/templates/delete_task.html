@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Task</title>
+</head>
+<body>
+
+    <h1>Delete Task</h1>
+
+    <form method="POST" action="/delete-task">
+
+        {% csrf_token %}
+
+        <input type="text" name="name" placeholder="Enter Name">
+
+        <br><br>
+
+        <input type="text" name="phone_num" placeholder="Enter Phone Number">
+
+        <br><br>
+
+        <button type="submit">
+            Delete Task
+        </button>
+
+    </form>
+    <h3>
+    {{ message }}
+</h3>
+
+</body>
+</html>
