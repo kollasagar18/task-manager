@@ -155,3 +155,357 @@ render repository
 
 postman repository
     https://kollasagar-s2-5203529.postman.co/workspace/sagar-kolla's-Workspace~27fcf620-bf99-4a1a-8062-5f18b83ea3d2/run/47633912-72e48fb2-8981-4ddc-8142-1ba388b03f96?action=share&creator=47633912
+
+
+
+    
+###postman repository
+{
+  "info": {
+    "_postman_id": "85c0721d-9ddd-4c00-8e5e-3336c5ef96ae",
+    "name": "primetrade_ass",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47633912",
+    "_collection_link": "https://go.postman.co/collection/47633912-85c0721d-9ddd-4c00-8e5e-3336c5ef96ae?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "user_signup",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "OPTIONS",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"sagar\",\r\n    \"phone_num\":\"9999999999\",\r\n    \"password\":\"1234\",\r\n    \"re_password\":\"1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/signup",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user_login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"sagar\",\r\n    \"phone_num\":\"9999999999\",\r\n    \"password\":\"1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/login",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User_create_task",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "OPTIONS",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"sagar\",\r\n    \"phone_num\":\"9999999999\",\r\n    \"title\":\"djNgo\",\r\n    \"description\":\"not\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/create-task",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "create-task"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user_view_task",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"sagar\",\r\n    \"phone_num\":\"9999999999\"\r\n   \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/view-task",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "view-task"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user_delete_task",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"sagar\",\r\n    \"phone_num\":\"9999999999\"\r\n   \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/delete-task",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "delete-task"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "user_updat_task",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "OPTIONS",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"sagar\",\r\n    \"phone_num\":\"9999999999\",\r\n    \"title\":\"Python\",\r\n    \"description\":\"Backend API\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/update-task",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "update-task"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "admin_signup",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "OPTIONS",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"admin\",\r\n    \"pin\":\"99999\",\r\n    \"password\":\"1234\",\r\n    \"re_password\":\"1234\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/admin-signup",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "admin-signup"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "admin_logn",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"admin\",\r\n    \"pin\":\"9999\",\r\n    \"password\":\"123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/admin-login",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "admin-login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "admin_get_all_users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/all-users",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "all-users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "all_tasks",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/all-tasks",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "all-tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "admin_delete_task",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "OPTIONS",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"user_id\":1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/delete-task-admin",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "delete-task-admin"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
