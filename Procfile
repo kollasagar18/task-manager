@@ -1,1 +1,0 @@
-web: gunicorn note_mage.wsgi:application

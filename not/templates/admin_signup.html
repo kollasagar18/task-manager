@@ -1,28 +1,28 @@
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>User Signup</title>
+    <title>Admin Signup</title>
 </head>
 <body>
 
-    <h1>User Signup</h1>
+    <h1>Admin Signup</h1>
 
-    <form method="POST" action="/signup">
+    <form method="POST" action="/admin-signup">
 
         {% csrf_token %}
 
         <input
             type="text"
             name="name"
-            placeholder="Enter Name"
+            placeholder="Enter Admin Name"
         >
 
         <br><br>
 
         <input
             type="text"
-            name="phone_num"
-            placeholder="Enter Phone Number"
+            name="pin"
+            placeholder="Enter Admin Pin"
         >
 
         <br><br>

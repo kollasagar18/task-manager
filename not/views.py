@@ -277,7 +277,6 @@ def user_login(request):
 
 
 
-@api_view(["PUT"])
 def create_task(request):
 
     if request.method == "POST":
@@ -537,7 +536,29 @@ def admin_signup(request):
                     "Passwords do not match"
                 }
             )
+        pin = request.POST.get("pin")
 
+        if not pin:
+
+            return render(
+            request,
+        "admin_signup.html",
+        {
+            "message":
+            "Pin is required"
+        }
+    )
+
+        if not pin.isdigit():
+
+            return render(
+        request,
+        "admin_signup.html",
+        {
+            "message":
+            "Pin must contain numbers only"
+        }
+    )
         cu.execute(
             """
             SELECT *
@@ -614,6 +635,7 @@ def admin_login(request):
         password = request.POST.get(
             "password"
         )
+        
 
         cu.execute(
             """
